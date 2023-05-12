@@ -1,0 +1,36 @@
+{
+  "name": "simple-tron-hd-wallet",
+  "version": "1.0.0",
+  "description": "HD wallet implementation for TRON Blockchain",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "repository":"https://github.com/AndriyAntonenko/simple-tron-hd-wallet",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register 'tests/**/*.ts'"
+  },
+  "author": "AndriyAntonenko <andriyantonenko3.16@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.1.3",
+    "@types/secp256k1": "^4.0.3",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "bip32": "^4.0.0",
+    "bip39": "^3.1.0",
+    "bs58": "^5.0.0",
+    "keccak256": "^1.0.6",
+    "secp256k1": "^5.0.0",
+    "tiny-secp256k1": "^2.2.1"
+  }
+}
